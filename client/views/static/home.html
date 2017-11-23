@@ -3,14 +3,19 @@
         <div class="container">
             <img src="/assets/Knowit_nisselue_2x.png" alt="Knowit logo" class="knowitNisselue">
             <h1>Knowits Julekalender 2017!</h1>
-
-            <p>For en litt mer geeky adventstid.</p>
-
+            <p class="no-bottom-margin">For en litt mer geeky adventstid.</p>
             {{#if currentUser}}
                 <p><a class="btn btn-primary btn-lg" href="{{pathFor 'problems'}}" role="button">Ta meg til lukene!</a></p>
             {{else}}
                 <p><a class="btn btn-primary btn-lg" href="{{pathFor 'atSignUp'}}" role="button">Bli med!</a></p>
             {{/if}}
+
+            <div class="contribute">
+                <h2>Ønsker du å bidra?</h2>
+                <p>I år har vi åpnet opp for at publikum kan sende inn forslag til oppgaver! Sitter du inne med en skikkelig nøtt i magen?</p>
+                <p>PS: Blir nøtta brukt krediteres du på oppgavesiden (si fra om du ikke vil det), og får et gavekort fra Amazon.</p>
+                <p><a target="_blank" role="button" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfq-fxO1-Bh-B4gLYeaevOdwPwunCkvCw5v42m7w_Ca6k9RcQ/viewform?usp=sf_link">Send den inn, da vel!</a></p>
+            </div>
         </div>
     </div>
 </template>
